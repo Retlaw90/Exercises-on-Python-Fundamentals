@@ -1,0 +1,10 @@
+import math
+
+# Lunghezza dei cateti
+cateto1 = 10.123
+cateto2 = 30.456
+
+# Calcolo dell'ipotenusa
+ipotenusa = math.sqrt(cateto1**2 + cateto2**2)
+
+print(ipotenusa)
