@@ -26,10 +26,11 @@ def Contauguali (ls, lsCheck):
     return totale
 #print("Numeri:", Contauguali ( GeneraLista(N), GeneraLista(N)))
 
-ls=     [1, 1, 4, 3, 1]
-lsCheck=[1, 4, 1, 4, 3]
-def ContaUgualiInAltroPostoestesso (ls, lsCheck):
 
+
+def ContaUgualiInAltroPostoestesso (ls, lsCheck):
+    ls=ls.copy()
+    lsCheck=lsCheck.copy()
     stessoposto=0
     for i in range(len(lsCheck)):
         if lsCheck[i] == ls[i]:
