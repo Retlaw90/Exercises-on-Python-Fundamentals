@@ -11,6 +11,8 @@ def GeneraLista(N):
 
 def Contauguali (ls, lsCheck):
     totale=0
+    ls=ls.copy()
+    lsCheck=lsCheck.copy()
     for i in range(len(ls)):
         if ls[i] == lsCheck [i]:
             totale= totale + 1
@@ -18,12 +20,6 @@ def Contauguali (ls, lsCheck):
 #print("Numeri uguali:", Contauguali ( GeneraLista(N), GeneraLista(N)))
 
 
-def Contauguali (ls, lsCheck):
-    totale=0
-    for i in range(len(ls)):
-        if ls[i] == lsCheck [i]:
-            totale= totale + 1
-    return totale
 #print("Numeri:", Contauguali ( GeneraLista(N), GeneraLista(N)))
 
 
@@ -43,7 +39,12 @@ def ContaUgualiInAltroPostoestesso (ls, lsCheck):
             altroposto += 1
             ls.remove(lsCheck[i])
     return stessoposto, altroposto
-print(ContaUgualiInAltroPostoestesso(GeneraLista(N), GeneraLista(N)))
+#print(ContaUgualiInAltroPostoestesso(GeneraLista(N), GeneraLista(N)))
+
+lists=(GeneraLista(N))
+lists2=(GeneraLista(N))
+print(Contauguali(lists,lists2))
+
 
 
 
